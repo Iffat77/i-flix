@@ -1,0 +1,61 @@
+.banner-container{
+  height: 100vh;
+ /* display: flex; */
+  display: grid;
+  grid-template-rows: 50px 400px 400px 400px 400px;
+  grid-template-columns: 1fr; 
+  
+  grid-template-areas: 
+    "header"
+    "action"
+    "comedy"
+    "drama"
+    "thriller"
+    ;
+}
+.banner{
+  display: flex ;
+  /* flex: 1; */
+  max-width: 300px;
+  max-height:300px;
+  flex: 1;
+  
+  
+  }
+
+.title-main {
+   grid-area: header;
+
+}
+
+.action{
+  grid-area: action;
+  display: flex; 
+  height: 100%;
+  column-gap: 10px;
+
+  /* position: relative;
+  display: block; */
+}
+
+.comedy {
+  grid-area: comedy;
+  display: flex; 
+  flex-direction: row;
+  overflow-y: hidden;
+  column-gap: 10px;
+}
+
+.drama {
+    grid-area: drama;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+.thriller {
+    grid-area: thriller;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}

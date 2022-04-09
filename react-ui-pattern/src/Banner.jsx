@@ -1,17 +1,10 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
-import Data from './App'
+import './banner.css'
 
-// function Banner(props) {
-  
-
-// }
-
-
-
-// return (
-//   <div>
-//     <img src="banners"></img>
-//   </div>
-
-// )
+export default function banner({movie}) {
+  return (
+    <div className="banner" key={movie.id}>
+      <img src={movie.image} alt={movie.title} />
+    </div>
+  )
+}
