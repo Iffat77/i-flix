@@ -22,7 +22,7 @@ export default function Home({ data }) {
     setDrama(dramaData)
     setThriller(thrillerData)
     
-  }, [data])
+  }, [])
  
 
   return (
