@@ -2,60 +2,191 @@
   height: 100vh;
  /* display: flex; */
   display: grid;
-  grid-template-rows: 50px 400px 400px 400px 400px;
+  grid-template-rows: 50px 100px 300px 100px 300px 100px 300px 100px 300px;
   grid-template-columns: 1fr; 
   
   grid-template-areas: 
     "header"
+    "t1"
     "action"
+    "t2"
     "comedy"
+    "t3"
     "drama"
+    "t4"
     "thriller"
     ;
 }
+
+.modal-back{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(221, 221, 221, 0.9);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.modal-container{
+  /* height: auto; */
+  width: 80vw;
+  border-radius: 1rem;
+  background-color: #655B71;
+  display: flex;
+  flex-direction: column;
+  padding:2rem;
+}
+
+.modal-title{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.close-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn{
+  background-color: transparent;
+  border: none;
+  cursor:  pointer;
+  font-size: 1.8rem;
+  color: white;
+}
+.exit-container{
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.exit-btn{
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: .8rem;
+  width: 7rem;
+  border: 1px solid white;
+  color: red;
+  border-radius: 8px;
+}
+
+
+
+.modal-stars{
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.modal-plot{
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+
 .banner{
   display: flex ;
-  /* flex: 1; */
   max-width: 300px;
-  max-height:300px;
-  flex: 1;
-  
-  
-  }
+  max-height: 300px;
+}
 
 .title-main {
    grid-area: header;
+   text-align: center;
+   font-size: 3.2rem;
+   font-weight: bold;
+   font-family:'Exo 2', sans-serif;
+   color: #f2f230;
 
 }
 
+.action-title{
+  grid-area: t1; 
+  margin-left: 1.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+
+}
 .action{
   grid-area: action;
   display: flex; 
   height: 100%;
   column-gap: 10px;
+  overflow-x: scroll;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-  /* position: relative;
-  display: block; */
+.comedy-title{
+  grid-area: t2; 
+  margin-left: 1.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+  
 }
 
 .comedy {
   grid-area: comedy;
   display: flex; 
-  flex-direction: row;
   overflow-y: hidden;
   column-gap: 10px;
+  overflow-x: scroll;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
 }
 
+.drama-title{
+  grid-area: t3; 
+  margin-left: 1.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+}
 .drama {
-    grid-area: drama;
-    display: flex;
-    flex-direction: row;
-    overflow-y: hidden;
+  grid-area: drama;
+  display: flex; 
+  height: 100%;
+  column-gap: 10px;
+  overflow-x: scroll;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
 }
 
+.thriller-title{
+  grid-area: t4; 
+  margin-left: 1.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+}
 .thriller {
     grid-area: thriller;
-    display: flex;
-    flex-direction: row;
-    overflow-y: hidden;
+    display: flex; 
+  height: 100%;
+  column-gap: 10px;
+  overflow-x: scroll;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+
+
+
+
