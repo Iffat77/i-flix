@@ -9,7 +9,7 @@ function App() {
   // new key k_bwz76gkw
   // const getData = async () => {
   //   const response = await axios.get(
-  //     "https://imdb-api.com/API/AdvancedSearch/k_hfsy49pt?groups=top_100"
+  //     "https://imdb-api.com/API/AdvancedSearch/k_bwz76gkw?groups=top_100"
   //   );
   //   setData(response.data);
    
