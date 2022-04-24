@@ -16,7 +16,7 @@ function App() {
      setData(response.data.results)
     };
     getData()
-    ;
+  
   }, [])
   
 // if (!data.length) return <h3>Loading...</h3>
