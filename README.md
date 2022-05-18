@@ -1,4 +1,4 @@
-# <strong> [i-Flix]()</strong>
+# <strong> [i-Flix](https://iflicks.netlify.app/)</strong>
 
 ![Wireframe](https://res.cloudinary.com/dsk8h1adc/image/upload/v1650817442/Screen_Shot_2022-04-24_at_12.20.52_PM_um83tq.png)
 
