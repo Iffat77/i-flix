@@ -1,6 +1,5 @@
 .banner-container{
   height: 100vh;
- /* display: flex; */
   display: grid;
   grid-template-rows: 50px 100px 300px 100px 300px 100px 300px 100px 300px;
   grid-template-columns: 1fr; 
@@ -29,7 +28,6 @@
   z-index: 1;
 }
 .modal-container{
-  /* height: auto; */
   width: 80vw;
   border-radius: 1rem;
   background-color: #655B71;
@@ -75,8 +73,6 @@
   border-radius: 8px;
 }
 
-
-
 .modal-stars{
   margin-top: 2em;
   display: flex;
@@ -98,7 +94,6 @@
   color: white;
   font-family: 'Exo 2', sans-serif;
 }
-
 
 .banner{
   display: flex ;

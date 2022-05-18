@@ -1,8 +1,7 @@
 import React,{ useEffect, useState } from 'react'
-// import movieData from './theData.json'
 import axios from 'axios';
 import Home from './Home';
-import './App.css';
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,8 +18,6 @@ function App() {
   
   }, [])
   
-// if (!data.length) return <h3>Loading...</h3>
-
   return (
     <div className="App">
       {data.length && <Home data={data} />}
